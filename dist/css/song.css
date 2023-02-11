@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11753/3a48f113240346b2a16121dd420dc646_2022-12-19-05-20-59.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    border-bottom: 1px solid white;
+}
+
+nav .logo{
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 50px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,0.7);
+ }
+.btn{
+    float: right;
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .btn{
+        display: block;
+    }
+    ul{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background: rgba(0,0,0,0,2);
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    nav{
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    nav ul{
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    nav ul li{
+        margin: 50px 0;
+        line-height: 30px;
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    a.active, a:hover{
+        color: white;
+        background: rgba(0,0,0,0,6);
+    }
+    nav ul li a:hover{
+        color: rgba(0,0,0,0,7);
+    }
+}
+
+.content{
+    width: 100%;
+    min-height: 100vh;
+    
+    background-position: center;
+    background-size: cover; 
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+.content .box-song1{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    align-items: right;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.content .box-song1 .foto1{
+    width: 300px;
+    height: 100px;
+   
+    left: 10%;
+    height: 60%;
+    position: absolute;
+   
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+}
+@media screen and (max-width:1024px){
+    .content .box-song1 .foto1{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+.content .box-song1 .textBox{
+    margin-left: 40%;
+}
+@media screen and (max-width:1024px){
+    .content .box-song1 .textBox{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+
+.content .box-song1 .textBox h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+}
+h3{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.content .box-song1 .textBox p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    
+}
+
+
+.content .box-song2{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.content .box-song2 .foto2{
+    width: 300px;
+    left: 10%;
+    height: 60%;
+    position: absolute;
+    overflow: hidden;  
+
+    box-shadow: 10px 25px 30px;
+}
+@media screen and (max-width:1024px){
+    .content .box-song2 .foto2{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+
+.content .box-song2 .textBox{
+    margin-left: 40%;
+}
+
+@media screen and (max-width:1024px){
+    .content .box-song2 .textBox{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+
+.content .box-song2 .textBox h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+}
+.content .box-song2 .textBox p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    
+}
+
+.content .box-song3{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.content .box-song3 .foto3{
+    width: 300px;
+    left: 10%;
+    height: 60%;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+}
+
+@media screen and (max-width:1024px){
+    .content .box-song3 .foto3{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+        justify-self: center;
+    }
+}
+.content .box-song3 .textBox{
+    margin-left: 40%;
+}
+@media screen and (max-width:1024px){
+    .content .box-song3 .textBox{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+        justify-self: center;
+    }
+}
+.content .box-song3 .textBox h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+}
+.content .box-song3 .textBox p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    
+}
+
+.content .box-song4{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.content .box-song4 .foto4{
+    width: 300px;
+    
+    left: 10%;
+    height: 60%;
+    position: absolute;
+    
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+}
+@media screen and (max-width:1024px){
+    .content .box-song4 .foto4{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+
+.content .box-song4 .foto4 img{
+    background-size: contain;
+}
+
+.content .box-song4 .textBox{
+    margin-left: 40%;
+}
+@media screen and (max-width:1024px){
+    .content .box-song4 .textBox{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+
+.content .box-song4 .textBox h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+}
+.content .box-song4 .textBox p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    
+}
+
+.sosmed{
+    margin-bottom: 50px;
+}
+
+.icon{
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:1024px){
+    .sosmed .icon{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;  
+    }
+}
+
+.icon a{
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+}
+.icon a:hover{
+    color:rgb(243, 168, 29)
+}
