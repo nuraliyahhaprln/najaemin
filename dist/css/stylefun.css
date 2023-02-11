@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: white;
+    
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 0px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    border-bottom: 1px solid white;
+}
+
+nav .logo{
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 50px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,0.7);
+ }
+.btn{
+    float: right;
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .btn{
+        display: block;
+    }
+    ul{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background: rgba(0,0,0,0,2);
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    nav{
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    nav ul{
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    nav ul li{
+        margin: 50px 0;
+        line-height: 30px;
+        display: block;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    
+    a.active, a:hover{
+        color: white;
+        background: rgba(0,0,0,0,6);
+    }
+    nav ul li a:hover{
+        color: rgba(0,0,0,0,7);
+    }
+}
+
+
+h1{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.desc1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11716/156d07e0aed24a7b85ce8fba05ea27d7_2022-06-22-07-55-20.jpg);
+    background-position: center;
+    background-size: cover; 
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.desc1 .box-desc{
+    flex-basis: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    align-items: center;
+    margin-left: 50px;
+    justify-content: space-between;
+    
+}
+
+.desc1 .box-desc .main1{
+    width: 300px;
+    left: 70%;
+    height: 60%;
+    position: absolute;
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+}
+.desc1 .box-desc .main1 .wrap1{
+    display: flex;
+    animation: slide 20s infinite;
+}
+.desc1 .box-desc .main1 .wrap1 img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-20%0);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.desc1 .box-desc .box{
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 80px;
+}
+
+.desc1 .box-desc .box h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+
+}
+.desc1 .box-desc .box p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+    
+}
+
+.desc2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11706/10c4c0030bae4182b013544722fd7afa_2022-05-13-14-18-16.jpg);
+    background-position: center;
+    background-size: cover; 
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    
+}
+.desc2 .box-desc{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.desc2 .box-desc .main2{
+   width: 300px;
+    left: 70%;
+    height: 60%;
+    position: absolute;
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+}
+.desc2 .box-desc .main2 .wrap2{
+    display: flex;
+    animation: slide 20s infinite;
+}
+.desc2 .box-desc .main2 .wrap2 img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-20%0);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.desc2 .box-desc .box{
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 80px;
+}
+
+.desc2 .box-desc .box h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-top: 50px;
+
+}
+.desc2 .box-desc .box p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 50px;
+    font-weight: 20px;
+    
+}
+
+.desc3{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11637/4ddccdcbb5d64d55b5dd05991dd82dfc_2022-05-13-13-56-19.jpg);
+    background-position: center;
+    background-size: cover; 
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+.desc3 .box-desc{
+   flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.desc3 .box-desc .main3{
+    width: 300px;
+    left: 70%;
+    height: 60%;
+    position: absolute;
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+   
+}
+.desc3 .box-desc .main3 .wrap3{
+    display: flex;
+    animation: slide 20s infinite;
+}
+.desc3 .box-desc .main3 .wrap3 img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-20%0);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.desc3 .box-desc .box{
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 80px;
+}
+
+.desc3 .box-desc .box h2{
+     color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    margin-top: 50px;
+
+}
+.desc3 .box-desc .box p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 50px;
+    font-weight: 20px;
+    
+}
+.desc4{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11646/83add6cf22fe47daa93d93ca7733decd_2022-05-13-14-04-12.jpg);
+    background-position: center;
+    background-size: cover; 
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    
+}
+
+.desc4 .box-desc{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.desc4 .box-desc .main4{
+    width: 300px;
+    left: 70%;
+    height: 60%;
+    position: absolute;
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+    
+}
+.desc4 .box-desc .main4 .wrap4{
+    display: flex;
+    animation: slide 20s infinite;
+}
+.desc4 .box-desc .main4 .wrap4 img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-20%0);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.desc4 .box-desc .box{
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 80px;
+
+}
+
+.desc4 .box-desc .box h2{
+    color: white;
+    font-size: 50px;
+    
+    margin-bottom: 10px;
+    line-height: 1.2;
+
+}
+.desc4 .box-desc .box p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 100px;
+    
+}
+.desc5{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11646/0ec21dd5d0be4a69b4eabad3eb5f354c_2022-05-13-14-04-13.jpg);
+    background-position: center;
+    background-size: cover; 
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    
+}
+
+.desc5 .box-desc{
+    flex-basis: 50%;
+    grid-template-rows: 1fr;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.desc5 .box-desc .main5{
+    width: 300px;
+    left: 70%;
+    height: 60%;
+    position: absolute;
+    overflow: hidden;  
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px;
+   
+}
+.desc5 .box-desc .main5 .wrap5{
+    display: flex;
+    animation: slide 20s infinite;
+}
+.desc5 .box-desc .main5 .wrap5 img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-20%0);
+    }
+    50% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.desc5 .box-desc .box{
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 80px;
+}
+
+.desc5 .box-desc .box h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+
+}
+.desc5 .box-desc .box p{
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 50px;
+    
+}
+
+@media screen and (max-width: 1020px) {
+    .wrap1 {
+        width: 54vw;
+    }
+}
+
+

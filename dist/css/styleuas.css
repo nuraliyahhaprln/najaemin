@@ -1,0 +1,110 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "roboto", sans-serif;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://smtown-cdn.smtown.com/upload/teaser/11716/e5afd1234a6f42709701405350918974_2022-06-22-07-55-20.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-left: 15%;
+        padding-right: 8%;
+        padding-top: 5%;
+        box-sizing: border-box;
+        background-attachment: fixed;
+    }
+ @media screen and (max-width:1024px){
+    .content .textBox{
+        row-gap: 0;
+        width: 83vw;
+        align-self: flex-end;
+        
+    }
+
+
+}
+
+    h1{
+        color: white;
+        font-size: 100px;
+        margin-left: 10px;
+    }
+    p{
+        color: white;
+        font-size: 18px;
+        line-height: 25px;
+        width: 75%;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    button {
+        width: 150px;
+        color: black;
+        font-size: 12px;
+        padding: 12px 0;
+        background-color: white;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    button:hover{
+        background-color: rgb(212, 212, 212);
+        transition: all 0.3s ease;
+    }
+    
+    button a {
+        margin-top: 10px; ; color: black; border-radius: 20px; font-weight: 500; letter-spacing: 1px; text-decoration: none;
+    }
+    
+
+    .card{
+        width: 200px;
+        height: 210px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 12px;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card1{
+        background-image: url(https://smtown-cdn.smtown.com/upload/teaser/11753/54534cdcefd14a85a3d60fa53b10fb39_2022-12-19-05-20-58.jpg);
+        color: white;
+    }
+    .card2{
+        background-image: url(https://smtown-cdn.smtown.com/upload/teaser/11550/93d0c4377ec64ef7b2aae053ec7d7d04_2022-05-13-13-49-46.jpg);
+    }
+    .card3{
+        background-image: url(https://smtown-cdn.smtown.com/upload/teaser/11716/2624f2e6f8c14089abd94f9e9ac6ce23_2022-06-22-07-55-24.jpg);
+    }
+    .card4{
+        background-image: url(https://smtown-cdn.smtown.com/upload/teaser/11646/9927268ba8814ece871638f32c630005_2022-05-13-14-08-15.jpg);
+    }
+    .card:hover{
+        transform:translateY(-10px)
+    }
+    h5 {
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+        text-decoration: none;
+    }
+    h5 a{
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+        text-decoration: none;
+    }
+    .card p{
+        text-shadow: 0 0 15px #000;
+        font-size: 8px;
+
+    }
